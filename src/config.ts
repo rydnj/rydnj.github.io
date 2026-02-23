@@ -1,91 +1,100 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
-  social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
-  },
-  aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+  name: "Ryan Denny",
+  title: "AI Engineer | ML Engineer | Data Scientist",
+  description: "Building deployable AI systems. MS in Artificial Intelligence from Northeastern University. Published researcher in Computer Vision.",
+  accentColor: "#e94560", // Feel free to change — red-pink accent. Alternatives: "#6366f1" (indigo), "#0ea5e9" (sky blue), "#10b981" (emerald)
+
+  // Social links (all optional — remove any you don't want)
+  email: "ryandennyjohn@gmail.com",
+  linkedin: "https://linkedin.com/in/ryan-denny-02",
+  github: "https://github.com/rydnj",
+  // twitter: "", // Uncomment and add if you ever set one up
+
+  aboutMe: `I'm focused on building AI systems that work in production. I recently completed my MS in Artificial Intelligence at Northeastern University, where I published research in computer vision with Springer (https://doi.org/10.1007/978-981-99-8324-7_16). I build across the full stack — from RAG pipelines and LLM integrations to real-time WebSocket applications deployed on AWS.\n\nMy recent work includes an AI-powered SEC filing compliance analyzer achieving 85%+ risk detection precision, and a real-time collaborative kanban board with sub-50ms WebSocket synchronization.`,
+
+  skills: [
+    "Python",
+    "PyTorch",
+    "TensorFlow",
+    "LangChain",
+    "OpenAI",
+    "Hugging Face",
+    "Scikit-learn",
+    "RAG",
+    "NLP",
+    "Computer Vision",
+    "FastAPI",
+    "Flask",
+    "PostgreSQL",
+    "pgvector",
+    "SQL",
+    "SQLAlchemy",
+    "Docker",
+    "AWS",
+    "SvelteKit",
+    "React",
+    "Streamlit",
+    "WebSockets",
+    "Git",
+    "Pandas",
+    "NumPy",
+    "Java",
+    "C++",
+  ],
+
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "ComplianceScope — AI Financial Compliance Analyst",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "RAG-powered SEC filing analyzer that ingests 10-K/10-Q filings, automatically flags compliance risks across 7 categories with 85%+ precision, and generates executive risk reports. Two-tier detection engine combining keyword matching and LLM classification with structured outputs. Key metrics: 85%+ risk detection precision · <3s query response · <2 min filing ingestion.",
+      link: "https://github.com/rydnj/ComplianceScope-AI-Financial-Compliance-Analyst",
+      skills: ["FastAPI", "LangChain", "OpenAI", "pgvector", "PostgreSQL", "Streamlit", "Docker", "AWS"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "SyncBoard — Real-Time Collaborative Kanban Board",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Real-time collaborative workspace where teams create rooms, organize tasks on a kanban board, and see each other's changes instantly via WebSockets. Features live presence tracking, drag-and-drop cards, and persistent state. Key metrics: Sub-50ms WebSocket latency · 15+ concurrent users · 100% board state consistency.",
+      link: "http://34.198.77.126:3000/",
+      skills: ["SvelteKit", "FastAPI", "PostgreSQL", "WebSockets", "Docker", "AWS"],
     },
     {
-      name: "ExtensionKit",
+      name: "LSeg — Language-Driven Semantic Segmentation",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Zero-shot semantic segmentation model combining DPT and CLIP encoders. Achieved 58% accuracy on ADE20K using only natural language supervision — no pixel-level training labels. Custom ViTWrapper enables arbitrary input sizes via position embedding interpolation.",
+      link: "https://github.com/rz-collab/ML_Project",
+      skills: ["PyTorch", "PyTorch Lightning", "CLIP", "DPT", "MSeg"],
     },
   ],
+
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Bayanat Smart Services",
+      title: "Data Science Intern",
+      dateRange: "May 2022 – July 2022",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Developed a spam classification POC, improving F1-score by 10% within 2 months to reduce manual data processing costs for legacy system upgrades.",
+        "Benchmarked XGBoost and Logistic Regression achieving 90%+ accuracy and reducing production latency by 15%.",
+        "Authored validation reports for stakeholders documenting results across 1,000+ records to support model review and traceability.",
       ],
     },
   ],
+
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "Northeastern University",
+      degree: "Master of Science in Artificial Intelligence",
+      dateRange: "Jan 2024 – Dec 2025",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
+        "GPA: 3.54",
+        "Published research in Computer Vision (Springer LNNS, ICITA 2023)",
       ],
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
+      school: "Heriot-Watt University",
+      degree: "Bachelor of Science (Hons) in Computer Science",
+      dateRange: "Sep 2020 – Jul 2023",
       achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "First Class with Honours (Equivalent to ~4.0 GPA)",
       ],
     },
   ],
