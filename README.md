@@ -1,6 +1,6 @@
 # ryandenny.dev
 
-My personal portfolio site. Built with [Astro](https://astro.build/) and [Tailwind CSS v4](https://tailwindcss.com/), based on the [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio) template by Ryan Fitzgerald.
+My personal portfolio site. Built with [Astro](https://astro.build/) and [Tailwind CSS v4](https://tailwindcss.com/), based on the fork from [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio) template done by Ryan Fitzgerald.
 
 ## Live
 
