@@ -2,15 +2,14 @@ export const siteConfig = {
   name: "Ryan Denny",
   title: "AI Engineer | ML Engineer | Data Scientist",
   description: "Building deployable AI systems. MS in Artificial Intelligence from Northeastern University. Published researcher in Computer Vision.",
-  accentColor: "#e94560", // Feel free to change — red-pink accent. Alternatives: "#6366f1" (indigo), "#0ea5e9" (sky blue), "#10b981" (emerald)
+  accentColor: "#e94560",
+  social: {
+    email: "ryandennyjohn@gmail.com",
+    linkedin: "https://linkedin.com/in/ryan-denny-02",
+    github: "https://github.com/rydnj",
+  },
 
-  // Social links (all optional — remove any you don't want)
-  email: "ryandennyjohn@gmail.com",
-  linkedin: "https://linkedin.com/in/ryan-denny-02",
-  github: "https://github.com/rydnj",
-  // twitter: "", // Uncomment and add if you ever set one up
-
-  aboutMe: `I'm focused on building AI systems that work in production. I recently completed my MS in Artificial Intelligence at Northeastern University, where I published research in computer vision with Springer (https://doi.org/10.1007/978-981-99-8324-7_16). I build across the full stack — from RAG pipelines and LLM integrations to real-time WebSocket applications deployed on AWS.\n\nMy recent work includes an AI-powered SEC filing compliance analyzer achieving 85%+ risk detection precision, and a real-time collaborative kanban board with sub-50ms WebSocket synchronization.`,
+  aboutMe: `I recently finished my MS in Artificial Intelligence at Northeastern University and I'm looking for my first full-time role. During grad school, I published a paper in computer vision with Springer and got hooked on the problem of making AI systems that actually work outside of a Jupyter notebook.\n\nMost of what I build lives at the intersection of AI and software engineering — things like RAG pipelines over real financial documents, real-time collaborative apps with WebSockets, and LLM integrations with structured outputs. I care a lot about shipping code that runs somewhere real, not just passing on a test set.\n\nWhen I'm not building, I'm probably deep in a SQL problem on LeetCode or figuring out how to deploy something on AWS without breaking the free tier.`,
 
   skills: [
     "Python",
